@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.Ppi2014Genes" table="ppi2014_genes" catalog="2014bio">
+        <id name="ppi2014GenesId" type="java.lang.Integer">
+            <column name="ppi2014_genes_id" />
+            <generator class="identity" />
+        </id>
+        <property name="geneId" type="int">
+            <column name="gene_id" not-null="true" />
+        </property>
+        <property name="symbol" type="string">
+            <column name="symbol" length="200" not-null="true" />
+        </property>
+        <property name="tf" type="int">
+            <column name="tf" not-null="true" />
+        </property>
+        <property name="rc" type="int">
+            <column name="rc" not-null="true" />
+        </property>
+        <property name="oncogene" type="int">
+            <column name="oncogene" not-null="true" />
+        </property>
+        <property name="tumorSuppressor" type="int">
+            <column name="tumor_suppressor" not-null="true" />
+        </property>
+        <property name="cancerRelatedGene" type="int">
+            <column name="cancer_related_gene" not-null="true" />
+        </property>
+        <property name="go" type="string">
+            <column name="go" length="65535" not-null="true" />
+        </property>
+        <property name="biologicalProcess" type="string">
+            <column name="biological_process" length="65535" not-null="true" />
+        </property>
+        <property name="molecularFunction" type="string">
+            <column name="molecular_function" length="65535" not-null="true" />
+        </property>
+        <property name="cellularComponent" type="string">
+            <column name="cellular_component" length="65535" not-null="true" />
+        </property>
+        <property name="tissue" type="string">
+            <column name="tissue" length="65535" not-null="true" />
+        </property>
+        <property name="omim" type="string">
+            <column name="omim" length="200" not-null="true" />
+        </property>
+        <property name="hmddDiease" type="string">
+            <column name="hmdd_diease" length="65535" not-null="true" />
+        </property>
+        <property name="kegg" type="string">
+            <column name="kegg" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

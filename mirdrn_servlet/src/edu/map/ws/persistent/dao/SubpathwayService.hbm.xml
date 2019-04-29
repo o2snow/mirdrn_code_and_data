@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.SubpathwayService" table="subpathway_service" catalog="2014bio">
+        <id name="subpathwayId" type="java.lang.Integer">
+            <column name="subpathway_id" />
+            <generator class="identity" />
+        </id>
+        <property name="targetGene" type="int">
+            <column name="target_gene" not-null="true" />
+        </property>
+        <property name="symbolTarget" type="string">
+            <column name="symbol_target" length="100" not-null="true" />
+        </property>
+        <property name="tfTarget" type="int">
+            <column name="tf_target" not-null="true" />
+        </property>
+        <property name="rcTarget" type="int">
+            <column name="rc_target" not-null="true" />
+        </property>
+        <property name="roleTarget" type="string">
+            <column name="role_target" length="100" not-null="true" />
+        </property>
+        <property name="omimTarget" type="string">
+            <column name="omim_target" length="200" not-null="true" />
+        </property>
+        <property name="tissueTarget" type="string">
+            <column name="tissue_target" length="65535" not-null="true" />
+        </property>
+        <property name="geneLevel1" type="int">
+            <column name="gene_level_1" not-null="true" />
+        </property>
+        <property name="symbol1" type="string">
+            <column name="symbol_1" length="100" not-null="true" />
+        </property>
+        <property name="tf1" type="int">
+            <column name="tf_1" not-null="true" />
+        </property>
+        <property name="rc1" type="int">
+            <column name="rc_1" not-null="true" />
+        </property>
+        <property name="role1" type="string">
+            <column name="role_1" length="100" not-null="true" />
+        </property>
+        <property name="omim1" type="string">
+            <column name="omim_1" length="200" not-null="true" />
+        </property>
+        <property name="tissue1" type="string">
+            <column name="tissue_1" length="65535" not-null="true" />
+        </property>
+        <property name="geneLevel2" type="int">
+            <column name="gene_level_2" not-null="true" />
+        </property>
+        <property name="symbol2" type="string">
+            <column name="symbol_2" length="100" not-null="true" />
+        </property>
+        <property name="tf2" type="int">
+            <column name="tf_2" not-null="true" />
+        </property>
+        <property name="rc2" type="int">
+            <column name="rc_2" not-null="true" />
+        </property>
+        <property name="role2" type="string">
+            <column name="role_2" length="100" not-null="true" />
+        </property>
+        <property name="omim2" type="string">
+            <column name="omim_2" length="200" not-null="true" />
+        </property>
+        <property name="tissue2" type="string">
+            <column name="tissue_2" length="65535" not-null="true" />
+        </property>
+        <property name="kegg" type="string">
+            <column name="kegg" length="200" not-null="true" />
+        </property>
+        <property name="bpJaccardCoefficient" type="double">
+            <column name="bp_jaccard_coefficient" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="mcJaccardCoefficient" type="double">
+            <column name="mc_jaccard_coefficient" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

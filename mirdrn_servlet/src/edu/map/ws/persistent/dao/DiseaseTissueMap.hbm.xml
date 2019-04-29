@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.DiseaseTissueMap" table="disease_tissue_map" catalog="2014bio">
+        <id name="diseaseTissueMapId" type="java.lang.Integer">
+            <column name="disease_tissue_map_id" />
+            <generator class="identity" />
+        </id>
+        <property name="hmddDisease" type="string">
+            <column name="hmdd_disease" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

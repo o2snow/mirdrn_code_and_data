@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.Go" table="go" catalog="2014bio">
+        <id name="goId" type="java.lang.Integer">
+            <column name="go_id" />
+            <generator class="identity" />
+        </id>
+        <property name="id" type="string">
+            <column name="id" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="nameSpace" type="string">
+            <column name="name_space" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

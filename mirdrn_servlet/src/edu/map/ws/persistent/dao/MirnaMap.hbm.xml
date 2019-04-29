@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.MirnaMap" table="mirna_map" catalog="2014bio">
+        <composite-id name="id" class="edu.map.ws.persistent.dao.MirnaMapId">
+            <key-property name="mirnaMapId" type="int">
+                <column name="mirna_map_id" />
+            </key-property>
+            <key-property name="matureMirna" type="string">
+                <column name="mature_mirna" length="100" />
+            </key-property>
+        </composite-id>
+        <property name="geneId" type="int">
+            <column name="gene_id" not-null="true" />
+        </property>
+        <property name="ensemblTranscriptId" type="string">
+            <column name="ensembl_transcript_id" length="100" not-null="true" />
+        </property>
+        <property name="targetStart" type="int">
+            <column name="target_start" not-null="true" />
+        </property>
+        <property name="tsrgetEnd" type="int">
+            <column name="tsrget_end" not-null="true" />
+        </property>
+        <property name="mirna35" type="string">
+            <column name="mirna_3_5" not-null="true" />
+        </property>
+        <property name="alinment" type="string">
+            <column name="alinment" not-null="true" />
+        </property>
+        <property name="target53" type="string">
+            <column name="target_5_3" not-null="true" />
+        </property>
+        <property name="toolName" type="string">
+            <column name="tool_name" not-null="true" />
+        </property>
+        <property name="criterion1" type="int">
+            <column name="criterion_1" not-null="true" />
+        </property>
+        <property name="criterion2" type="int">
+            <column name="criterion_2" not-null="true" />
+        </property>
+        <property name="criterion3" type="int">
+            <column name="criterion_3" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

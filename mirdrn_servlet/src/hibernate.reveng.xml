@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="2014bio" match-name="hmdd_target_pure_raw"/>
+  <table-filter match-catalog="2014bio" match-name="ppi2014_genes"/>
+  <table-filter match-catalog="2014bio" match-name="sirna"/>
+  <table-filter match-catalog="2014bio" match-name="subpathway_service"/>
+  <table-filter match-catalog="2014bio" match-name="tarbase_v5_uni"/>
+  <table-filter match-catalog="2014bio" match-name="go"/>
+</hibernate-reverse-engineering>

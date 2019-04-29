@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.DrugTarget" table="drug_target" catalog="2014bio">
+        <id name="drugTargetId" type="java.lang.Integer">
+            <column name="drug_target_id" />
+            <generator class="identity" />
+        </id>
+        <property name="id" type="int">
+            <column name="id" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="geneName" type="string">
+            <column name="gene_name" not-null="true" />
+        </property>
+        <property name="entrezGeneId" type="int">
+            <column name="entrez_gene_id" not-null="true" />
+        </property>
+        <property name="proteinId" type="string">
+            <column name="protein_id" not-null="true" />
+        </property>
+        <property name="geneId" type="string">
+            <column name="gene_id" not-null="true" />
+        </property>
+        <property name="uniprotId" type="string">
+            <column name="uniprot_id" not-null="true" />
+        </property>
+        <property name="uniprotTitle" type="string">
+            <column name="uniprot_title" not-null="true" />
+        </property>
+        <property name="pdbId" type="string">
+            <column name="pdb_id" not-null="true" />
+        </property>
+        <property name="genecardId" type="string">
+            <column name="genecard_id" not-null="true" />
+        </property>
+        <property name="genatlasId" type="string">
+            <column name="genatlas_id" not-null="true" />
+        </property>
+        <property name="hgncId" type="string">
+            <column name="hgnc_id" not-null="true" />
+        </property>
+        <property name="hprdId" type="string">
+            <column name="hprd_id" not-null="true" />
+        </property>
+        <property name="speciesCategory" type="string">
+            <column name="species_category" not-null="true" />
+        </property>
+        <property name="species" type="string">
+            <column name="species" not-null="true" />
+        </property>
+        <property name="drugIds" type="string">
+            <column name="drug_ids" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

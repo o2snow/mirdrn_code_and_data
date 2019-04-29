@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.Sirna" table="sirna" catalog="2014bio">
+        <id name="sirnaId" type="java.lang.Integer">
+            <column name="sirna_id" />
+            <generator class="identity" />
+        </id>
+        <property name="siRecords" type="int">
+            <column name="siRecords" not-null="true" />
+        </property>
+        <property name="pubMed" type="string">
+            <column name="PubMed" not-null="true" />
+        </property>
+        <property name="geneAc" type="string">
+            <column name="Gene_AC" not-null="true" />
+        </property>
+        <property name="geneId" type="int">
+            <column name="GeneID" not-null="true" />
+        </property>
+        <property name="symbol" type="string">
+            <column name="Symbol" length="50" not-null="true" />
+        </property>
+        <property name="db" type="string">
+            <column name="DB" length="50" not-null="true" />
+        </property>
+        <property name="siRnaSeq" type="string">
+            <column name="siRNA_Seq" not-null="true" />
+        </property>
+        <property name="siRnaLen" type="string">
+            <column name="siRNA_Len" not-null="true" />
+        </property>
+        <property name="tissue" type="string">
+            <column name="Tissue" not-null="true" />
+        </property>
+        <property name="species" type="string">
+            <column name="Species" not-null="true" />
+        </property>
+        <property name="speciesScientific" type="string">
+            <column name="Species_scientific" not-null="true" />
+        </property>
+        <property name="method" type="string">
+            <column name="Method" not-null="true" />
+        </property>
+        <property name="testObject" type="string">
+            <column name="Test_object" not-null="true" />
+        </property>
+        <property name="testMethod" type="string">
+            <column name="Test_Method" not-null="true" />
+        </property>
+        <property name="efficacyRating" type="string">
+            <column name="Efficacy_rating" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.Omim" table="omim" catalog="2014bio">
+        <id name="omimId" type="java.lang.Integer">
+            <column name="omim_id" />
+            <generator class="identity" />
+        </id>
+        <property name="number" type="string">
+            <column name="number" length="100" not-null="true" />
+        </property>
+        <property name="month" type="string">
+            <column name="month" length="50" not-null="true" />
+        </property>
+        <property name="day" type="string">
+            <column name="day" length="50" not-null="true" />
+        </property>
+        <property name="year" type="string">
+            <column name="year" length="50" not-null="true" />
+        </property>
+        <property name="location" type="string">
+            <column name="location" length="100" not-null="true" />
+        </property>
+        <property name="symbol" type="string">
+            <column name="symbol" length="200" not-null="true" />
+        </property>
+        <property name="geneId" type="string">
+            <column name="gene_id" length="65535" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="50" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" length="300" not-null="true" />
+        </property>
+        <property name="titleCont" type="string">
+            <column name="title_cont" length="300" not-null="true" />
+        </property>
+        <property name="mimNumber" type="string">
+            <column name="mim_number" length="100" not-null="true" />
+        </property>
+        <property name="method" type="string">
+            <column name="method" length="200" not-null="true" />
+        </property>
+        <property name="comments" type="string">
+            <column name="comments" length="300" not-null="true" />
+        </property>
+        <property name="commentsCont" type="string">
+            <column name="comments_cont" length="200" not-null="true" />
+        </property>
+        <property name="disorders" type="string">
+            <column name="disorders" length="200" not-null="true" />
+        </property>
+        <property name="disordersCount1" type="string">
+            <column name="disorders_count_1" length="200" not-null="true" />
+        </property>
+        <property name="disordersCount2" type="string">
+            <column name="disorders_count_2" length="200" not-null="true" />
+        </property>
+        <property name="mouseCorrelate" type="string">
+            <column name="mouse_correlate" length="200" not-null="true" />
+        </property>
+        <property name="reference" type="string">
+            <column name="reference" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

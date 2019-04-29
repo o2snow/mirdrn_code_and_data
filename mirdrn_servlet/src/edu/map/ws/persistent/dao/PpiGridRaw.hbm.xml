@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.PpiGridRaw" table="ppi_grid_raw" catalog="2014bio">
+        <id name="ppiGridId" type="java.lang.Integer">
+            <column name="ppi_grid_id" />
+            <generator class="identity" />
+        </id>
+        <property name="interactorA" type="string">
+            <column name="interactor_a" length="100" not-null="true" />
+        </property>
+        <property name="interactorB" type="string">
+            <column name="interactor_b" length="100" not-null="true" />
+        </property>
+        <property name="symbolA" type="string">
+            <column name="symbol_a" length="100" not-null="true" />
+        </property>
+        <property name="symbolB" type="string">
+            <column name="symbol_b" length="100" not-null="true" />
+        </property>
+        <property name="geneIdA" type="int">
+            <column name="gene_id_a" not-null="true" />
+        </property>
+        <property name="geneIdB" type="int">
+            <column name="gene_id_b" not-null="true" />
+        </property>
+        <property name="aliasesA" type="string">
+            <column name="aliases_a" not-null="true" />
+        </property>
+        <property name="aliasesB" type="string">
+            <column name="aliases_b" not-null="true" />
+        </property>
+        <property name="system" type="string">
+            <column name="system" not-null="true" />
+        </property>
+        <property name="source" type="string">
+            <column name="source" not-null="true" />
+        </property>
+        <property name="pubmed" type="string">
+            <column name="pubmed" not-null="true" />
+        </property>
+        <property name="taxidA" type="int">
+            <column name="taxid_a" not-null="true" />
+        </property>
+        <property name="taxidB" type="int">
+            <column name="taxid_b" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

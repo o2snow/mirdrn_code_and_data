@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.PpiDipRaw" table="ppi_dip_raw" catalog="2014bio">
+        <id name="autoid" type="java.lang.Integer">
+            <column name="autoid" />
+            <generator class="identity" />
+        </id>
+        <property name="idA" type="string">
+            <column name="id_a" not-null="true" />
+        </property>
+        <property name="idB" type="string">
+            <column name="id_b" not-null="true" />
+        </property>
+        <property name="geneIdA" type="int">
+            <column name="gene_id_a" not-null="true" />
+        </property>
+        <property name="geneIdB" type="int">
+            <column name="gene_id_b" not-null="true" />
+        </property>
+        <property name="altA" type="string">
+            <column name="alt_a" not-null="true" />
+        </property>
+        <property name="altB" type="string">
+            <column name="alt_b" not-null="true" />
+        </property>
+        <property name="aliasA" type="string">
+            <column name="alias_a" not-null="true" />
+        </property>
+        <property name="aliasB" type="string">
+            <column name="alias_b" not-null="true" />
+        </property>
+        <property name="method" type="string">
+            <column name="method" not-null="true" />
+        </property>
+        <property name="author" type="string">
+            <column name="author" not-null="true" />
+        </property>
+        <property name="publication" type="string">
+            <column name="publication" length="100" not-null="true" />
+        </property>
+        <property name="taxidA" type="string">
+            <column name="taxid_a" length="100" not-null="true" />
+        </property>
+        <property name="taxidB" type="string">
+            <column name="taxid_b" length="100" not-null="true" />
+        </property>
+        <property name="interactionType" type="string">
+            <column name="interaction_type" length="200" not-null="true" />
+        </property>
+        <property name="database" type="string">
+            <column name="database" not-null="true" />
+        </property>
+        <property name="identifier" type="int">
+            <column name="identifier" not-null="true" />
+        </property>
+        <property name="confidence" type="string">
+            <column name="confidence" length="200" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

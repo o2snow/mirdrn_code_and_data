@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.PpiHprdRaw" table="ppi_hprd_raw" catalog="2014bio">
+        <id name="autoId" type="java.lang.Integer">
+            <column name="auto_id" />
+            <generator class="identity" />
+        </id>
+        <property name="geneIdA" type="int">
+            <column name="gene_id_a" not-null="true" />
+        </property>
+        <property name="geneIdB" type="int">
+            <column name="gene_id_b" not-null="true" />
+        </property>
+        <property name="interactionId" type="string">
+            <column name="interaction_id" length="65535" not-null="true" />
+        </property>
+        <property name="pubmed" type="string">
+            <column name="pubmed" length="65535" not-null="true" />
+        </property>
+        <property name="sourceId" type="string">
+            <column name="source_id" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

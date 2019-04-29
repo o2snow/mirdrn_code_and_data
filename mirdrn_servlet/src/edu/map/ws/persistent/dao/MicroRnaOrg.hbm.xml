@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.MicroRnaOrg" table="micro_rna_org" catalog="2014bio">
+        <composite-id name="id" class="edu.map.ws.persistent.dao.MicroRnaOrgId">
+            <key-property name="microRnaOrgId" type="int">
+                <column name="micro_rna_org_id" />
+            </key-property>
+            <key-property name="mirnaName" type="string">
+                <column name="mirna_name" />
+            </key-property>
+            <key-property name="geneId" type="int">
+                <column name="gene_id" />
+            </key-property>
+        </composite-id>
+        <property name="mirbaseAcc" type="string">
+            <column name="mirbase_acc" not-null="true" />
+        </property>
+        <property name="geneSymbol" type="string">
+            <column name="gene_symbol" not-null="true" />
+        </property>
+        <property name="transcriptId" type="string">
+            <column name="transcript_id" not-null="true" />
+        </property>
+        <property name="extTranscriptId" type="string">
+            <column name="ext_transcript_id" not-null="true" />
+        </property>
+        <property name="mirnaAlignment" type="string">
+            <column name="mirna_alignment" not-null="true" />
+        </property>
+        <property name="alignment" type="string">
+            <column name="alignment" not-null="true" />
+        </property>
+        <property name="geneAlignment" type="string">
+            <column name="gene_alignment" not-null="true" />
+        </property>
+        <property name="mirnaStart" type="string">
+            <column name="mirna_start" not-null="true" />
+        </property>
+        <property name="mirnaEnd" type="string">
+            <column name="mirna_end" not-null="true" />
+        </property>
+        <property name="geneStart" type="int">
+            <column name="gene_start" not-null="true" />
+        </property>
+        <property name="geneEnd" type="int">
+            <column name="gene_end" not-null="true" />
+        </property>
+        <property name="genomeCoordinates" type="string">
+            <column name="genome_coordinates" not-null="true" />
+        </property>
+        <property name="conservation" type="float">
+            <column name="conservation" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="alignScore" type="float">
+            <column name="align_score" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="seedCat" type="string">
+            <column name="seed_cat" not-null="true" />
+        </property>
+        <property name="energy" type="string">
+            <column name="energy" not-null="true" />
+        </property>
+        <property name="mirsvrScore" type="string">
+            <column name="mirsvr_score" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

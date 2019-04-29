@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.Ensembl" table="ensembl" catalog="2014bio">
+        <id name="ensemblId" type="java.lang.Integer">
+            <column name="ensembl_id" />
+            <generator class="identity" />
+        </id>
+        <property name="ensemblGeneId" type="string">
+            <column name="ensembl_gene_id" length="50" not-null="true" />
+        </property>
+        <property name="ensemblTranscriptId" type="string">
+            <column name="ensembl_transcript_id" length="50" not-null="true" />
+        </property>
+        <property name="ensemblProteinId" type="string">
+            <column name="ensembl_protein_id" length="50" not-null="true" />
+        </property>
+        <property name="geneId" type="int">
+            <column name="gene_id" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

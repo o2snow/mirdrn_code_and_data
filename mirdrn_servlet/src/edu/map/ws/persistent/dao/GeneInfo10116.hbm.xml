@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.GeneInfo10116" table="gene_info_10116" catalog="2014bio">
+        <id name="geneInfoId" type="java.lang.Integer">
+            <column name="gene_info_id" />
+            <generator class="identity" />
+        </id>
+        <property name="taxId" type="int">
+            <column name="tax_id" not-null="true" />
+        </property>
+        <property name="geneId" type="int">
+            <column name="gene_id" not-null="true" />
+        </property>
+        <property name="symbol" type="string">
+            <column name="symbol" length="100" not-null="true" />
+        </property>
+        <property name="locusTag" type="string">
+            <column name="locus_tag" length="100" not-null="true" />
+        </property>
+        <property name="synonyms" type="string">
+            <column name="synonyms" not-null="true" />
+        </property>
+        <property name="dbXrefs" type="string">
+            <column name="db_xrefs" not-null="true" />
+        </property>
+        <property name="chromosome" type="string">
+            <column name="chromosome" length="100" not-null="true" />
+        </property>
+        <property name="mapLocation" type="string">
+            <column name="map_location" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" not-null="true" />
+        </property>
+        <property name="typeOfGene" type="string">
+            <column name="type_of_gene" length="100" not-null="true" />
+        </property>
+        <property name="symbolFromNomenclatureAuthority" type="string">
+            <column name="symbol_from_nomenclature_authority" not-null="true" />
+        </property>
+        <property name="fullNameFromNomenclatureAuthority" type="string">
+            <column name="full_name_from_nomenclature_authority" not-null="true" />
+        </property>
+        <property name="nomenclatureStatus" type="string">
+            <column name="nomenclature_status" not-null="true" />
+        </property>
+        <property name="otherDesignations" type="string">
+            <column name="other_designations" not-null="true" />
+        </property>
+        <property name="modificationDate" type="string">
+            <column name="modification_date" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

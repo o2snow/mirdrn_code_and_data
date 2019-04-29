@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="siplus">
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/2014bio</property>
+        <property name="hibernate.connection.username"></property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.characterEncoding">utf8</property>
+        <property name="current_session_context_class">thread</property>
+        
+		<property name="c3p0.acquire_increment">0</property>
+		<property name="c3p0.idle_test_period">100</property>
+		<property name="c3p0.max_size">300</property>
+		<property name="c3p0.max_statements">0</property>
+		<property name="c3p0.min_size">5</property>
+		<property name="c3p0.timeout">100</property>
+		<property name="c3p0.idle_test_period">100</property>
+		
+		<mapping resource="edu/map/ws/persistent/dao/Ppi2014Genes.hbm.xml"/>
+		<mapping resource="edu/map/ws/persistent/dao/Sirna.hbm.xml"/>
+		<mapping resource="edu/map/ws/persistent/dao/SubpathwayService.hbm.xml"/>
+		<mapping resource="edu/map/ws/persistent/dao/TarbaseV5Uni.hbm.xml"/>
+		<mapping resource="edu/map/ws/persistent/dao/HmddTargetPureRaw.hbm.xml"/>
+		<mapping resource="edu/map/ws/persistent/dao/Go.hbm.xml"/>
+		
+		
+    </session-factory>
+</hibernate-configuration>

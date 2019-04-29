@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.HmddTargetRaw" table="hmdd_target_raw" catalog="2014bio">
+        <id name="hmddAllId" type="java.lang.Integer">
+            <column name="hmdd_all_id" />
+            <generator class="identity" />
+        </id>
+        <property name="mirnaRaw" type="string">
+            <column name="mirna_raw" length="100" not-null="true" />
+        </property>
+        <property name="mirna" type="string">
+            <column name="mirna" length="100" not-null="true" />
+        </property>
+        <property name="gene" type="string">
+            <column name="gene" length="200" not-null="true" />
+        </property>
+        <property name="geneId" type="int">
+            <column name="gene_id" not-null="true" />
+        </property>
+        <property name="disease" type="string">
+            <column name="disease" length="200" not-null="true" />
+        </property>
+        <property name="pubmed" type="int">
+            <column name="pubmed" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="500" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

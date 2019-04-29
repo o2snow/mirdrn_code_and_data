@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.TarbaseV5Uni" table="tarbase_v5_uni" catalog="2014bio">
+        <id name="autoid" type="java.lang.Integer">
+            <column name="autoid" />
+            <generator class="identity" />
+        </id>
+        <property name="id" type="string">
+            <column name="Id" not-null="true" />
+        </property>
+        <property name="idV4" type="string">
+            <column name="Id_V4" not-null="true" />
+        </property>
+        <property name="dataType" type="string">
+            <column name="Data_Type" not-null="true" />
+        </property>
+        <property name="supportType" type="string">
+            <column name="Support_Type" not-null="true" />
+        </property>
+        <property name="organism" type="string">
+            <column name="Organism" not-null="true" />
+        </property>
+        <property name="miRna" type="string">
+            <column name="miRNA" not-null="true" />
+        </property>
+        <property name="hgncSymbol" type="string">
+            <column name="HGNC_Symbol" not-null="true" />
+        </property>
+        <property name="gene" type="string">
+            <column name="Gene" not-null="true" />
+        </property>
+        <property name="geneId" type="int">
+            <column name="GeneID" not-null="true" />
+        </property>
+        <property name="officialSymbol" type="string">
+            <column name="Official_Symbol" not-null="true" />
+        </property>
+        <property name="isoform" type="string">
+            <column name="Isoform" not-null="true" />
+        </property>
+        <property name="ensembl" type="string">
+            <column name="Ensembl" not-null="true" />
+        </property>
+        <property name="chrLoc" type="string">
+            <column name="Chr_loc" length="65535" not-null="true" />
+        </property>
+        <property name="mre" type="string">
+            <column name="MRE" not-null="true" />
+        </property>
+        <property name="SSS" type="string">
+            <column name="S_S_S" not-null="true" />
+        </property>
+        <property name="IS" type="string">
+            <column name="I_S" length="65535" not-null="true" />
+        </property>
+        <property name="DS" type="string">
+            <column name="D_S" length="65535" not-null="true" />
+        </property>
+        <property name="validation" type="string">
+            <column name="Validation" not-null="true" />
+        </property>
+        <property name="paper" type="string">
+            <column name="Paper" length="65535" not-null="true" />
+        </property>
+        <property name="targetSeq" type="string">
+            <column name="Target_seq" length="65535" not-null="true" />
+        </property>
+        <property name="miRnaSeq" type="string">
+            <column name="miRNA_seq" length="65535" not-null="true" />
+        </property>
+        <property name="seqLocation" type="string">
+            <column name="Seq_location" length="65535" not-null="true" />
+        </property>
+        <property name="pimd" type="string">
+            <column name="PIMD" not-null="true" />
+        </property>
+        <property name="kegg" type="string">
+            <column name="KEGG" length="65535" not-null="true" />
+        </property>
+        <property name="proteinType" type="string">
+            <column name="Protein_type" not-null="true" />
+        </property>
+        <property name="differentiallyExpressedIn" type="string">
+            <column name="Differentially_expressed_in" length="65535" not-null="true" />
+        </property>
+        <property name="pathologyOrEvent" type="string">
+            <column name="Pathology_or_Event" length="65535" not-null="true" />
+        </property>
+        <property name="misRegulation" type="string">
+            <column name="Mis_Regulation" length="65535" not-null="true" />
+        </property>
+        <property name="geneExpression" type="string">
+            <column name="Gene_Expression" length="65535" not-null="true" />
+        </property>
+        <property name="tumourInvolvement" type="string">
+            <column name="Tumour_Involvement" length="65535" not-null="true" />
+        </property>
+        <property name="bibliographicNotes" type="string">
+            <column name="Bibliographic_Notes" length="65535" not-null="true" />
+        </property>
+        <property name="cellLineUsed" type="string">
+            <column name="Cell_Line_Used" length="65535" not-null="true" />
+        </property>
+        <property name="hgncId" type="string">
+            <column name="HGNC_ID" length="65535" not-null="true" />
+        </property>
+        <property name="swissProt" type="string">
+            <column name="SwissProt" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

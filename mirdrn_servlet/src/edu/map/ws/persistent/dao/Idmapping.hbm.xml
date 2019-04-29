@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.Idmapping" table="idmapping" catalog="2014bio">
+        <id name="idmappingId" type="java.lang.Integer">
+            <column name="idmapping_id" />
+            <generator class="identity" />
+        </id>
+        <property name="uniprotAc" type="string">
+            <column name="uniprot_ac" length="100" not-null="true" />
+        </property>
+        <property name="uniprotId" type="string">
+            <column name="uniprot_id" length="200" not-null="true" />
+        </property>
+        <property name="entrez" type="string">
+            <column name="entrez" length="200" not-null="true" />
+        </property>
+        <property name="refseq" type="string">
+            <column name="refseq" length="200" not-null="true" />
+        </property>
+        <property name="ncbiGi" type="string">
+            <column name="ncbi_gi" length="200" not-null="true" />
+        </property>
+        <property name="pdb" type="string">
+            <column name="pdb" length="200" not-null="true" />
+        </property>
+        <property name="pfam" type="string">
+            <column name="pfam" length="200" not-null="true" />
+        </property>
+        <property name="go" type="string">
+            <column name="go" not-null="true" />
+        </property>
+        <property name="pirsf" type="string">
+            <column name="pirsf" length="200" not-null="true" />
+        </property>
+        <property name="ipi" type="string">
+            <column name="ipi" length="200" not-null="true" />
+        </property>
+        <property name="uniref100" type="string">
+            <column name="uniref100" length="200" not-null="true" />
+        </property>
+        <property name="uniref90" type="string">
+            <column name="uniref90" length="200" not-null="true" />
+        </property>
+        <property name="uniref50" type="string">
+            <column name="uniref50" length="200" not-null="true" />
+        </property>
+        <property name="uniparc" type="string">
+            <column name="uniparc" length="200" not-null="true" />
+        </property>
+        <property name="pirSdAc" type="string">
+            <column name="pir_sd_ac" length="200" not-null="true" />
+        </property>
+        <property name="taxonomy" type="string">
+            <column name="taxonomy" length="100" not-null="true" />
+        </property>
+        <property name="mim" type="string">
+            <column name="mim" length="200" not-null="true" />
+        </property>
+        <property name="unigene" type="string">
+            <column name="unigene" length="200" not-null="true" />
+        </property>
+        <property name="ensembl" type="string">
+            <column name="ensembl" length="200" not-null="true" />
+        </property>
+        <property name="pubmed" type="string">
+            <column name="pubmed" not-null="true" />
+        </property>
+        <property name="emblGenDdbj" type="string">
+            <column name="embl_gen_ddbj" length="200" not-null="true" />
+        </property>
+        <property name="emblProteinId" type="string">
+            <column name="embl_protein_id" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.PpiBindRaw" table="ppi_bind_raw" catalog="2014bio">
+        <id name="ppiBindRawId" type="java.lang.Integer">
+            <column name="ppi_bind_raw_id" />
+            <generator class="identity" />
+        </id>
+        <property name="bindId" type="int">
+            <column name="bind_id" not-null="true" />
+        </property>
+        <property name="molNameA" type="string">
+            <column name="mol_name_a" length="100" not-null="true" />
+        </property>
+        <property name="molTypeA" type="string">
+            <column name="mol_type_a" length="100" not-null="true" />
+        </property>
+        <property name="giA" type="int">
+            <column name="gi_a" not-null="true" />
+        </property>
+        <property name="geneA" type="int">
+            <column name="gene_a" not-null="true" />
+        </property>
+        <property name="taxA" type="string">
+            <column name="tax_a" length="100" not-null="true" />
+        </property>
+        <property name="molNameB" type="string">
+            <column name="mol_name_b" length="100" not-null="true" />
+        </property>
+        <property name="molTypeB" type="string">
+            <column name="mol_type_b" length="100" not-null="true" />
+        </property>
+        <property name="giB" type="int">
+            <column name="gi_b" not-null="true" />
+        </property>
+        <property name="geneB" type="int">
+            <column name="gene_b" not-null="true" />
+        </property>
+        <property name="taxB" type="string">
+            <column name="tax_b" length="100" not-null="true" />
+        </property>
+        <property name="pmid" type="string">
+            <column name="pmid" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

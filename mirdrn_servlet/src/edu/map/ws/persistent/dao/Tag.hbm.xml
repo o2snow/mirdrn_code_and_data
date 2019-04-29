@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.Tag" table="tag" catalog="2014bio">
+        <id name="tagId" type="java.lang.Integer">
+            <column name="tag_id" />
+            <generator class="identity" />
+        </id>
+        <property name="symbol" type="string">
+            <column name="symbol" length="100" not-null="true" />
+        </property>
+        <property name="geneId" type="int">
+            <column name="gene_id" not-null="true" />
+        </property>
+        <property name="location" type="string">
+            <column name="location" length="200" not-null="true" />
+        </property>
+        <property name="category" type="string">
+            <column name="category" length="200" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" not-null="true" />
+        </property>
+        <property name="chromosome" type="string">
+            <column name="chromosome" length="11" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

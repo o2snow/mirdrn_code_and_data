@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014/8/6 ?W?? 10:27:37 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="edu.map.ws.persistent.dao.KeggPathway" table="kegg_pathway" catalog="2014bio">
+        <id name="keggPathwayId" type="java.lang.Integer">
+            <column name="kegg_pathway_id" />
+            <generator class="identity" />
+        </id>
+        <property name="entry" type="string">
+            <column name="entry" length="100" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="module" type="string">
+            <column name="module" length="65535" not-null="true" />
+        </property>
+        <property name="disease" type="string">
+            <column name="disease" length="65535" not-null="true" />
+        </property>
+        <property name="drug" type="string">
+            <column name="drug" length="65535" not-null="true" />
+        </property>
+        <property name="gene" type="string">
+            <column name="gene" length="65535" not-null="true" />
+        </property>
+        <property name="compound" type="string">
+            <column name="compound" length="65535" not-null="true" />
+        </property>
+        <property name="reference" type="string">
+            <column name="reference" length="65535" not-null="true" />
+        </property>
+        <property name="kopathway" type="string">
+            <column name="kopathway" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
