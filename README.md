@@ -1,14 +1,2 @@
 # mirdrn_code_and_data
-This repository provide the source code and data about the miRDRN website.
-http://mirdrn.ncu.edu.tw/mirdrn
-
-# miRDRN - WebSite Interface
-./mirdrn
-
-# miRDRN - WebService Servlet
-./mirdrn_servlet
-
-# miRDRN - Database (SQL)
-Limitation, to upload a single file size must be under 2G in Git LFS.
-This SQL file szie about 18GB.
-You can download the sql file with "http://mirdrn.ncu.edu.tw/2014bio.zip".
+The web service miRDRN (http://mirdrn.ncu.edu.tw/mirdrn) has two parts, source code and database. Database is a single file in SQL format of size 18 GB. Due the size limit (2G) of a single file set by Git LFS, this repository only contains the source code, composed of WebSite Interface (stored at ./mirdrn) and Webservice Servlet (stored at ./mirdrn_servlet). Database is stored separately at http://mirdrn.ncu.edu.tw/2014bio.zip, which is freely accessible.
