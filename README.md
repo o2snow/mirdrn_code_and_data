@@ -1,5 +1,5 @@
 # mirdrn_code_and_data
-This repository provide the source code and data about the miRDRN wibsite.
+This repository provide the source code and data about the miRDRN website.
 
 # miRDRN - WebSite Interface Source Code
 ./mirdrn
