@@ -1,6 +1,6 @@
 # mirdrn_code_and_data
 This repository provide the source code and data about the miRDRN website.
-http://mirdrn.ncu.edu.tw
+http://mirdrn.ncu.edu.tw/mirdrn
 
 # miRDRN - WebSite Interface Source Code
 ./mirdrn
