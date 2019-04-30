@@ -8,5 +8,6 @@ This repository provide the source code and data about the miRDRN wibsite.
 ./mirdrn_servlet
 
 # miRDRN - Database (SQL)
-Because there has a size limitation for single file upload, under 2G in Git LFS.
-Please go to download the sql file by "http://mirdrn.ncu.edu.tw/2014bio.zip".
+Limitation, to upload a single file size must be under 2G in Git LFS.
+This SQL file szie about 18GB.
+You can download the sql file with "http://mirdrn.ncu.edu.tw/2014bio.zip".
